@@ -1,0 +1,88 @@
+img{
+    /*efeito embacado*/
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -ms-filter: blur(5px);
+    -o-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.jumbotron{
+    margin-bottom:0px;
+    margin-top: 0px;
+    background-color:#063940;
+}
+
+#sidebar{
+    max-width: 95%;
+    background-color: #063940;
+    padding: 10px;
+}
+
+#sidebar a:hover, a:focus {
+    color: #FFF;
+    text-decoration:#ECE1C3;
+}
+
+#sidebar.nav > li{
+    text-align:center;
+    font-size:12pt;
+    text-shadow:initial;
+} 
+
+#menu h5{
+    text-align:center;
+    color:#ECE1C3;
+    font-size: 16pt;
+}
+#menu-title div.row div.well{
+    background-image: linear-gradient(to bottom,#195E63 0,#063940 100%);
+    margin-bottom: 1px;
+    padding-bottom: 50px;//colocar porcentagem
+    padding-top: 50px;//colocar porcentagem
+} 
+
+#menu-title div.row{
+    margin-right: 0px;
+    margin-left:0px;
+    
+}
+
+#sidebar.nav > li > a,
+#sidebar.nav > li > a:link {
+    background-color: #195E63;
+    color: #ECE1C3;
+    padding-bottom: 37px;//porcentagem
+    padding-top: 37px;//porcentagem
+    vertical-align: middle;
+}
+
+#sidebar.nav > li > a:hover,
+#sidebar.nav > li > a:focus {
+    background-color: #3E838C;
+}
+
+#main .col-sm-9{
+    padding-right: 0px; 
+    padding-left: 0px;
+}
+
+#title-carousel .carousel-caption{
+   top:0;
+}
+
+#buttons-carousel .carousel-caption button{
+    height: 50px; 
+    width: 150px;
+    white-space: normal;
+}
+
+#buttons-carousel button.btn-primary{
+    color: #ECE1C3;
+    background-color: #195E63;
+    border-color: #063940;
+}
+
+#main-title{
+     color: #063940;
+}
