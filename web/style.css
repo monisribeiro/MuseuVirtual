@@ -1,3 +1,7 @@
+html, body, .container-fluid{
+    height:100%;
+}
+
 img{
     /*efeito embacado*/
     -webkit-filter: blur(5px);
@@ -5,6 +9,35 @@ img{
     -ms-filter: blur(5px);
     -o-filter: blur(5px);
     filter: blur(5px);
+    height:100% !important;
+    width:100%;
+}
+
+.ng-scope{
+    height:100%;
+}
+.col-sm-3{
+    height:84%;
+}
+
+.col-sm-9{
+    height:100%;
+}
+
+.carousel, .carousel-inner{
+    height:100%;
+}
+
+.item{
+    height:100%;
+}
+
+.col-sm-3  > .row{
+    height:100%;
+}
+
+.container-fluid{
+    padding: 0px !important;
 }
 
 .jumbotron{
@@ -14,9 +47,11 @@ img{
 }
 
 #sidebar{
-    max-width: 95%;
+    max-width: 96%;
     background-color: #063940;
-    padding: 10px;
+    padding-right:0px;
+    padding-bottom: 0px;
+    height:100%;
 }
 
 #sidebar a:hover, a:focus {
@@ -26,35 +61,38 @@ img{
 
 #sidebar.nav > li{
     text-align:center;
-    font-size:12pt;
+    font-size:1.3em;
     text-shadow:initial;
 } 
 
-#menu h5{
+h5{
     text-align:center;
     color:#ECE1C3;
-    font-size: 16pt;
+    line-height:2.5;
+    font-size: 1.5em;
 }
-#menu-title div.row div.well{
+div.row div.well{
     background-image: linear-gradient(to bottom,#195E63 0,#063940 100%);
-    margin-bottom: 1px;
-    padding-bottom: 50px;//colocar porcentagem
-    padding-top: 50px;//colocar porcentagem
+    margin-bottom: 0px;
+    
 } 
+
+.well {
+    border-radius: 0px !important;
+    border:none !important;
+}
 
 #menu-title div.row{
     margin-right: 0px;
     margin-left:0px;
-    
 }
 
 #sidebar.nav > li > a,
 #sidebar.nav > li > a:link {
     background-color: #195E63;
     color: #ECE1C3;
-    padding-bottom: 37px;//porcentagem
-    padding-top: 37px;//porcentagem
-    vertical-align: middle;
+    line-height:2;
+    border-radius: 0px !important;
 }
 
 #sidebar.nav > li > a:hover,
@@ -62,9 +100,10 @@ img{
     background-color: #3E838C;
 }
 
-#main .col-sm-9{
+ .col-sm-9{
     padding-right: 0px; 
     padding-left: 0px;
+    min-height:50%;
 }
 
 #title-carousel .carousel-caption{
@@ -74,6 +113,7 @@ img{
 #buttons-carousel .carousel-caption button{
     height: 50px; 
     width: 150px;
+    font-size:0.9em;
     white-space: normal;
 }
 
@@ -83,6 +123,7 @@ img{
     border-color: #063940;
 }
 
-#main-title{
-     color: #063940;
+#menu-title{
+     color: #063940 !important;
+     
 }
