@@ -7,13 +7,13 @@
 
         <link rel="stylesheet" href="style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-      
+
         <!--por algum motivo o css e js do bootstrap local não tava funcionando bem com o modal-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     </head>
-    
+
     <body style="padding-top: 70px;">
         <!--navebar-->
         <div class="row">
@@ -36,7 +36,7 @@
                                 <a href="#/desafios" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Desafios<span class="caret"></span></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Associe as Imagens</a></li>
-                                    <li><a href="#">Teste seu Entendimento</a></li>
+                                    <li><a href="#">Teste seu Conhecimento</a></li>
                                 </ul>
                             </li>
                             <li><a href="#/sobreMuseu">Perguntas</a></li>
@@ -64,36 +64,36 @@
             </div>
         </div>
 
-        <!-- Modal -->
         <div id="myModal" class="modal fade" role="dialog">
             <div class="modal-dialog">
-                
                 <div class="modal-content">
                     <div class="modal-header" style=" background-color:#8EBDB6">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 class="modal-title">Modal Header</h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">Modal title</h4>
                     </div>
                     <div class="modal-body">
+
                     </div>
-                </div>
-            </div>
-            <div class="modal-footer">
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">
+                            Desafio
+                        </button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
 
-            </div>
-        </div>
 
-    </div>
-</div>
-<script>
-    $('.thumbnail').click(function () {
-        $('.modal-body').empty();
-        var title = $(this).parent('a').attr("title");
-        $('.modal-title').html(title);
-        var describ = $(this).parent('p');
-        $('.modal-body').html(describ);
-        $($(this).parents('div').html()).appendTo('.modal-body');
-        $('#myModal').modal({show: true});
-    });
-</script>
-</body>
+        <script>
+            $('.thumbnail').click(function () {
+                $('.modal-body').empty();
+                var title = $(this).parent('a').attr("title");
+                $('.modal-title').html(title);
+                var describ = $(this).parent('p');
+                $('.modal-body').html(describ);
+                $($(this).parents('div').html()).appendTo('.modal-body');
+                $('#myModal').modal({show: true});
+            });
+        </script>
+    </body>
 </html>
