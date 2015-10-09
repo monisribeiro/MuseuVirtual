@@ -19,7 +19,7 @@ and open the template in the editor.
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <button type="submit" class="btn btn-default btnTour" data-toggle="modal" data-target="#myModal">Clique</button>
+        <button type="submit" class="btn btn-default" data-toggle="modal" data-target="#myModal">Clique</button>
 
         
         <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
